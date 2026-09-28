@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2.5" flood-color="#1C1F26" flood-opacity="0.12"/>
+    </filter>
+    <marker id="rr-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0E6E5C"/>
+    </marker>
+  </defs>
+
+  <rect x="40" y="65" width="120" height="100" rx="8" fill="#FFFFFF" stroke="#4B5058" filter="url(#soft-shadow)"/>
+  <text x="100" y="90" text-anchor="middle" fill="#1C1F26" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600">Presentation</text>
+  <text x="100" y="110" text-anchor="middle" fill="#1C1F26" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600">Layer</text>
+  <text x="100" y="135" text-anchor="middle" fill="#4B5058" font-family="Space Grotesk, sans-serif" font-size="12">(Client UI)</text>
+
+  <rect x="260" y="65" width="120" height="100" rx="8" fill="#EEF5F2" stroke="#0E6E5C" filter="url(#soft-shadow)"/>
+  <text x="320" y="90" text-anchor="middle" fill="#0E6E5C" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600">Business</text>
+  <text x="320" y="110" text-anchor="middle" fill="#0E6E5C" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600">Layer</text>
+  <text x="320" y="135" text-anchor="middle" fill="#4B5058" font-family="Space Grotesk, sans-serif" font-size="12">(App Server)</text>
+
+  <rect x="480" y="65" width="120" height="100" rx="8" fill="#2B2E36" filter="url(#soft-shadow)"/>
+  <text x="540" y="90" text-anchor="middle" fill="#FAF9F6" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600">Data</text>
+  <text x="540" y="110" text-anchor="middle" fill="#FAF9F6" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600">Layer</text>
+  <text x="540" y="135" text-anchor="middle" fill="#FAF9F6" font-family="Space Grotesk, sans-serif" font-size="12">(Database)</text>
+
+  <path d="M160,105 L255,105" fill="none" stroke="#0E6E5C" stroke-width="2" marker-end="url(#rr-arrow)"/>
+  <path d="M255,125 L165,125" fill="none" stroke="#0E6E5C" stroke-width="2" marker-end="url(#rr-arrow)"/>
+
+  <path d="M380,105 L475,105" fill="none" stroke="#0E6E5C" stroke-width="2" marker-end="url(#rr-arrow)"/>
+  <path d="M475,125 L385,125" fill="none" stroke="#0E6E5C" stroke-width="2" marker-end="url(#rr-arrow)"/>
+</svg>

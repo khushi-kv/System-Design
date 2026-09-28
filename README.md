@@ -5,7 +5,7 @@ Personal system design notes with diagrams — built while prepping for intervie
 Each topic has explanations in my own words, plus diagrams to make the mechanism clear rather than just definitions.
 
 ## Topics
-
+- [Client-Server Architecture](./client-server-architecture/notes.md)
 - [Load Balancing](./load-balancing/notes.md)
 
 ## Why this repo exists

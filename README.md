@@ -7,6 +7,7 @@ Each topic has explanations in my own words, plus diagrams to make the mechanism
 ## Topics
 - [Client-Server Architecture](./client-server-architecture/notes.md)
 - [Load Balancing](./load-balancing/notes.md)
+- [Forward vs Reverse Proxy](./forward-vs-reverse-proxy/notes.md)
 
 ## Why this repo exists
 

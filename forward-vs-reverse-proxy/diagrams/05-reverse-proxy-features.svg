@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa" />
+
+  <!-- Internet Source -->
+  <g transform="translate(30, 200)">
+    <text x="50" y="-20" font-family="sans-serif" font-size="16" font-weight="bold" fill="#34495e" text-anchor="middle">Internet</text>
+    <text x="50" y="0" font-family="sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">Incoming Traffic</text>
+    <line x1="100" y1="-5" x2="180" y2="-5" stroke="#34495e" stroke-width="4" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Reverse Proxy Main Container -->
+  <rect x="200" y="40" width="380" height="370" rx="15" fill="#ecf0f1" stroke="#34495e" stroke-width="3" />
+  <rect x="200" y="40" width="380" height="50" rx="15" fill="#34495e" />
+  <!-- To cover bottom corners of the header -->
+  <rect x="200" y="70" width="380" height="20" fill="#34495e" />
+  
+  <text x="390" y="72" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">Reverse Proxy Gateway</text>
+
+  <!-- Features Stack inside Proxy -->
+  <g transform="translate(240, 110)">
+    <!-- TLS -->
+    <rect x="0" y="0" width="300" height="40" rx="8" fill="#9b59b6" />
+    <text x="150" y="25" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">TLS Termination</text>
+    
+    <!-- Security -->
+    <rect x="0" y="55" width="300" height="40" rx="8" fill="#e74c3c" />
+    <text x="150" y="80" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Security &amp; WAF</text>
+    
+    <!-- Caching -->
+    <rect x="0" y="110" width="300" height="40" rx="8" fill="#f39c12" />
+    <text x="150" y="135" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Caching</text>
+    
+    <!-- Routing -->
+    <rect x="0" y="165" width="300" height="40" rx="8" fill="#1abc9c" />
+    <text x="150" y="190" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Path-Based Routing</text>
+    
+    <!-- Load Balancing -->
+    <rect x="0" y="220" width="300" height="40" rx="8" fill="#2980b9" />
+    <text x="150" y="245" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Load Balancing</text>
+    
+    <!-- Flow arrows inside -->
+    <line x1="150" y1="40" x2="150" y2="55" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="150" y1="95" x2="150" y2="110" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="150" y1="150" x2="150" y2="165" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="150" y1="205" x2="150" y2="220" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Outgoing Traffic to Backends -->
+  <line x1="580" y1="340" x2="650" y2="150" stroke="#34495e" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="580" y1="340" x2="650" y2="225" stroke="#34495e" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="580" y1="340" x2="650" y2="300" stroke="#34495e" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Backend Servers -->
+  <g transform="translate(670, 110)">
+    <rect x="0" y="0" width="80" height="50" rx="8" fill="#2ecc71" />
+    <text x="40" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Server A</text>
+    
+    <rect x="0" y="90" width="80" height="50" rx="8" fill="#2ecc71" />
+    <text x="40" y="120" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Server B</text>
+    
+    <rect x="0" y="180" width="80" height="50" rx="8" fill="#2ecc71" />
+    <text x="40" y="210" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Server C</text>
+  </g>
+
+</svg>

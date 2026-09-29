@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa" />
+  
+  <!-- Internet Zone -->
+  <rect x="40" y="40" width="220" height="320" rx="10" fill="#e3f2fd" stroke="#90caf9" stroke-width="2" />
+  <text x="150" y="70" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1565c0" text-anchor="middle">Public Internet</text>
+  
+  <!-- External Clients -->
+  <g transform="translate(110, 100)">
+    <rect x="0" y="0" width="60" height="40" rx="6" fill="#1976d2" />
+    <text x="30" y="60" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Client A</text>
+  </g>
+  <g transform="translate(110, 260)">
+    <rect x="0" y="0" width="60" height="40" rx="6" fill="#1976d2" />
+    <text x="30" y="60" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Client B</text>
+  </g>
+  
+  <!-- Reverse Proxy -->
+  <g transform="translate(360, 140)">
+    <rect x="0" y="0" width="80" height="120" rx="10" fill="#f39c12" />
+    <line x1="10" y1="20" x2="70" y2="20" stroke="#fff" stroke-width="4" stroke-dasharray="10 5" />
+    <text x="40" y="150" font-family="sans-serif" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Reverse Proxy</text>
+    <text x="40" y="170" font-family="sans-serif" font-size="12" fill="#555" text-anchor="middle">IP: 198.51.100.1</text>
+  </g>
+  
+  <!-- Private Server Zone -->
+  <rect x="540" y="40" width="220" height="320" rx="10" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="2" />
+  <text x="650" y="70" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2e7d32" text-anchor="middle">Private Backend</text>
+  
+  <!-- Backend Servers -->
+  <g transform="translate(610, 90)">
+    <rect x="0" y="0" width="80" height="50" rx="8" fill="#2ecc71" />
+    <text x="40" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Server 1</text>
+  </g>
+  <g transform="translate(610, 175)">
+    <rect x="0" y="0" width="80" height="50" rx="8" fill="#2ecc71" />
+    <text x="40" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Server 2</text>
+  </g>
+  <g transform="translate(610, 260)">
+    <rect x="0" y="0" width="80" height="50" rx="8" fill="#2ecc71" />
+    <text x="40" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Server 3</text>
+  </g>
+  
+  <!-- Flow lines with labels -->
+  <!-- Client A request -->
+  <path d="M 180 120 Q 270 120 345 170" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="260" y="130" font-family="sans-serif" font-size="12" fill="#34495e" text-anchor="middle">GET /data</text>
+  
+  <!-- Client B request -->
+  <path d="M 180 280 Q 270 280 345 230" fill="none" stroke="#34495e" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="260" y="270" font-family="sans-serif" font-size="12" fill="#34495e" text-anchor="middle">GET /data</text>
+  
+  <!-- Proxy to Server 1 -->
+  <path d="M 455 170 Q 520 120 595 115" fill="none" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+  
+  <!-- Proxy to Server 3 -->
+  <path d="M 455 230 Q 520 280 595 285" fill="none" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+</svg>

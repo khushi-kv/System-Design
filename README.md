@@ -9,6 +9,7 @@ Each topic has explanations in my own words, plus diagrams to make the mechanism
 - [Load Balancing](./load-balancing/notes.md)
 - [Forward vs Reverse Proxy](./forward-vs-reverse-proxy/notes.md)
 - [Latency vs Throughput vs Bandwidth](./latency-throughput-bandwidth/notes.md)
+- [Checksums: How Computers Know When Data Is Broken](./checksums/notes.md)
 
 ## Why this repo exists
 
